@@ -141,13 +141,19 @@
 
         <section class="footer">
 
-            <span>Version 2.0. Marandi Internet Pvt. Ltd. 2023.</span>
+            <span>Version 2.0. Marandi Internet Pvt. Ltd. <span id="currentYear"></span>.</span>
 
         </section>
 
     </div>
 
     <script src="js/scroll.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').textContent = currentYear;
+        });
+    </script>
 
 </body>
 </html>
