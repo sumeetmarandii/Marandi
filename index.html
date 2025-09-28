@@ -2,164 +2,293 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <meta name="description" content="Creating stunning digital experiences with modern aesthetics, clean design principles, and cutting-edge technology. We offer web design, UI/UX design, and development services.">
+    <meta name="keywords" content="web design, UI/UX design, development, modern design, aesthetic, portfolio, contact, services">
+    <meta property="og:title" content="Aesthetic Modern Website">
+    <meta property="og:description" content="Creating stunning digital experiences with modern aesthetics, clean design principles, and cutting-edge technology.">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marandi.in/index.html">
+    <meta property="og:image" content="https://asset.marandi.in/owl.png">
+    <meta property="og:image:alt" content="Marandi In. Logo">
+    <meta property="og:image:type" content="image/png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home - Marandi In.">
+    <meta name="twitter:description" content="Get in touch with Marandi In. to start a conversation about your next project. We're ready to help you transform your vision into reality.">
+    <meta name="twitter:image" content="https://asset.marandi.in/owl.png">
+
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <!--<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>-->
     <link rel="manifest" href="favicon/site.webmanifest">
-    <title>Marandi Co.</title>
+
+    <meta name="robots" content="noindex">
+    
+    <title>Marandi In. - Transform Your Ideas Into Digital Excellence.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Marandi In.</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <div class="wrapper">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Beautiful</span><br>
+                    <span class="hero-subtitle">Modern Design</span>
+                </h1>
+                <p class="hero-description">
+                    Creating stunning digital experiences with modern aesthetics, 
+                    clean design principles, and cutting-edge technology.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.location='#about'">Get Started</button>
+                    <button class="btn btn-secondary" onclick="document.location='about.html'">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-        <section class="header">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">Crafting digital experiences that inspire and engage</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">✨</div>
+                    <h3>Creative Design</h3>
+                    <p>We blend creativity with functionality to create visually stunning and user-friendly designs.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Modern Technology</h3>
+                    <p>Using cutting-edge technologies to build fast, responsive, and scalable solutions.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">💎</div>
+                    <h3>Premium Quality</h3>
+                    <p>Every project is crafted with attention to detail and a commitment to excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h1><a href="./">Marandi Co.</a></h1>
-
-        </section>
-
-        <section class="mainContent">
-
-            <section class="con">
-
-                <!--<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>-->
-                
-                <section class="m">
-
-                    <section class="a">
-
-                        <p>Welcome to Marandi Co, a forward-thinking conglomerate specializing in web development, real estate, IoT solutions, and animal husbandry.</p>
-                        <p>By blending innovation with a deep commitment to quality, we strive to deliver impactful solutions that faster growth and connectivity across industries. Explore how Marandi Co. is reimagining the future, from smart farms to smart cities, and everything in between.</p>
-
-                        <!--<div class="box">
-                            <a class="button" href="#popup1">Connect Us!</a>
-                        </div>
-
-                        <div id="popup1" class="overlay">
-                            <div class="popup">
-                                <h2>Fill The Form!</h2>
-                                <a class="close" href="#">&times;</a>
-                                <div class="content">
-                                    <form action="mail.php" method="post">
-                                        <label for="name">Name:</label>
-                                        <input type="text" name="name" placeholder="Enter Your Name Here..." required>
-                                        <label for="email">Email:</label>
-                                        <input type="email" name="email" placeholder="Enter Your Email Here..." required>
-                                        <label for="phone">Phone No.</label>
-                                        <input type="tel" name="tel" placeholder="Enter Your Phone Number..." required>
-                                        <label for="message">Message:</label>
-                                        <textarea name="message" rows="10" placeholder="Enter Your Message..." required></textarea>
-                                        <button type="submit" value="Submit">Submit</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>-->
-
-                    </section>
-
-                    <section class="b">
-
-                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_amnqanpd.json" background="transparent"  speed="1"  style="width: 100%; height: 300px;"  loop  autoplay></lottie-player>
-
-                    </section>
-
-                    <section class="c">
-                        <p>Driven by a commitment to quality and sustainable growth, we aim to create solutions that enrich lives, connect communities, and empower businesses.</p>
-                    </section>
-
-                    <section class="b">
-                        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
-                        <dotlottie-player src="https://lottie.host/b86c1a92-3cb5-4f65-9b92-45dcd6d1c3df/eZqz7PGIqJ.json" background="transparent" speed="1" style="width: 100%; height: 300px;" loop autoplay></dotlottie-player>
-                    </section>
-
-                    <section class="c">
-                        <p>Our diverse expertise allows us to innovate across industries, from building cutting-edge digital platforms to enhancing agricultural practices through smart technology.</p>
-                        <p>Discover how we’re shaping the future across digital, physical, and agricultural landscapes.</p>
-                    </section>
-
-                    <section class="b">
-                        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script> 
-                        <dotlottie-player src="https://lottie.host/b83364ca-49b3-4fde-b1f0-c4231cc75ded/xOtsjb3PcG.json" background="transparent" speed="1" style="width: 100%; height: 300px;" loop autoplay></dotlottie-player>
-                    </section>
-
-                    <section class="d">
-
-                        <h2>About Us</h2>
-
-                        <p>
-                            <span>"Grow!"</span>
-                            <br>
-                            <span>-- Sumit Marandi</span>
-                            <br>
-                            <span>(Chairman, Marandi Co.)</span>
-                        </p>
-
-                    </section>              
-
-                    <section class="e">
-
-                        <ul>
-                            <h3>Mail Us:</h3>
-                            <br>
-                            <span><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:contact@marandi.in">contact@marandi.in</a></span>
-                            <br>
-                            <br>
-                            <span><i class="fa fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/+918789500326">+91 87895 00326</a></span>
-                        </ul>
-
-                        <ul>
-                            <h3>Address:</h3>
-                            <br>
-                            <span>SP COLONY</span>
-                            <br>
-                            <span>DIBDIH, RANCHI</span>
-                            <br>
-                            <span>JHARKHAND 834002</span>
-                        </ul>
-
-                    </section>
-
-                    <div class="n">
-
-                        <h2>Navigation</h2>
-
-                        <ul>
-                            <li><a href="./">Home</a></li>
-                            <li><a href="https://people.marandi.in/">Our People</a></li>
-                            <li><a href="t&c.html">Terms & Conditions</a></li>
-                            <li><a href="p&p.html">Privacy & Policy</a></li>
-                        </ul>
-
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive solutions for your digital needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-number">01</div>
+                    <h3>Web Design</h3>
+                    <p>Custom website designs that reflect your brand identity and engage your audience.</p>
+                    <div class="service-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
                     </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">02</div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design approach to create intuitive and delightful user experiences.</p>
+                    <div class="service-tech">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Adobe XD</span>
+                        <span class="tech-tag">Sketch</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">03</div>
+                    <h3>Development</h3>
+                    <p>Full-stack development services to bring your designs to life with clean, efficient code.</p>
+                    <div class="service-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">Showcase of our latest projects</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/e-com.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn">View Project</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>E-commerce Platform</h4>
+                        <p>Modern online store with seamless checkout experience</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/agency.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn">View Project</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Creative Agency</h4>
+                        <p>Brand identity and website for a creative agency</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/responsive.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="portfolio-overlay">
+                            <button class="view-btn">View Project</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Responsive Design</h4>
+                        <p>Website & WebApp with intuitive user interface</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your next project?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hi@marandi.in</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 89879 58804</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Dibdih, Ranchi</p>
+                            <p>Jharkhand - 834002</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm-Hero" action="contact.php" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="full_Name_Marandi" name="full_Name_Marandi" placeholder="Your Name" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email_Marandi" name="email_Marandi" placeholder="Your Email" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone_Marandi" name="phone_Marandi" placeholder="Your Phone" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message_Marandi" name="message_Marandi" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-        </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Marandi In.</h3>
+                    <p>Creating beautiful digital experiences with modern design principles.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/marandi.insta/" target="_blank" class="social-link">Instagram</a>
+                        <a href="mailto:hi@marandi.in" target="_blank" class="social-link">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Marandi In. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-        <section class="footer">
+    <script src="script.js"></script>
 
-            <span>Version 2.0 ♥️🇮🇳. <br> Marandi Internet Pvt. Ltd. <span id="currentYear"></span>.</span>
-
-        </section>
-
-    </div>
-    
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        var currentYear = new Date().getFullYear();
-        document.getElementById('currentYear').textContent = currentYear;
+        document.addEventListener("DOMContentLoaded", function() {
+            const yearSpan = document.getElementById("currentYear");
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
         });
     </script>
-
 </body>
 </html>
