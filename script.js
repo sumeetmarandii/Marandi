@@ -393,6 +393,14 @@ function showProjectModal(project) {
 // FAQ Toggle Functionality
 document.addEventListener('DOMContentLoaded', () => {
     const faqItems = document.querySelectorAll('.faq-item');
+    const syncFaqAria = () => {
+        faqItems.forEach(faqItem => {
+            const faqQuestion = faqItem.querySelector('.faq-question');
+            if (faqQuestion) {
+                faqQuestion.setAttribute('aria-expanded', faqItem.classList.contains('active') ? 'true' : 'false');
+            }
+        });
+    };
     
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
@@ -409,8 +417,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isActive) {
                 item.classList.add('active');
             }
+
+            syncFaqAria();
         });
     });
+
+    syncFaqAria();
 });
 
 // Portfolio Filter Functionality

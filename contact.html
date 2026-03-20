@@ -23,11 +23,21 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
 
-    <meta name="robots" content="noindex">
-
     <title>Contact Us - Marandi In.</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <meta name="google-site-verification" content="6cZbTcl8NohSBICBi7hnCWyXjnEsm5C1DcpHVgyfjVs" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VC9LSSRJZL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-VC9LSSRJZL');
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -41,7 +51,8 @@
                 <a href="about.html" class="nav-link">About</a>
                 <a href="services.html" class="nav-link">Services</a>
                 <a href="portfolio.html" class="nav-link">Portfolio</a>
-                <a href="contact.html" class="nav-link active">Contact</a>
+                <!-- <a href="contact.html" class="nav-link">Contact</a> -->
+                <a href="contactUs.pdf" target="_blank" rel="noopener noreferrer" class="nav-link">Contact &#x21d7;</a>
             </div>
             <div class="nav-toggle" id="navToggle">
                 <span class="bar"></span>
@@ -124,11 +135,11 @@
                     <div class="social-links-wrapper">
                         <h3>Connect With Us</h3>
                         <div class="social-icons">
-                            <a href="https://www.instagram.com/marandi.insta/" target="_blank" class="social-icon instagram" aria-label="Instagram">
-                                <img src="images/instagram.svg" alt="" style="width: 40px; height: 40px;">
+                            <a href="https://www.instagram.com/marandi.insta/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">
+                                <img src="images/instagram.svg" alt="Instagram icon">
                             </a>
-                            <a href="mailto:hi@marandi.in" target="_blank" class="social-icon mail" aria-label="mail">
-                                <img src="images/mail.svg" alt="" style="width: 40px; height: 40px;">
+                            <a href="mailto:hi@marandi.in" class="social-icon mail" aria-label="Email">
+                                <img src="images/mail.svg" alt="Mail icon">
                             </a>
                         </div>
                     </div>
@@ -141,23 +152,23 @@
                         <form id="contactForm-Hero" class="contact-form" action="contact.php" method="POST">
                             <div class="form-grid">
                                 <div class="form-group">
-                                    <label for="fullNameMarandi">Full Name *</label>
+                                    <label for="full_Name_Marandi">Full Name *</label>
                                     <input type="text" id="full_Name_Marandi" name="full_Name_Marandi" required placeholder="Rajesh Kumar" autocomplete="off">
                                 </div>
                                 <div class="form-group">
-                                    <label for="emailMarandi">Email Address *</label>
+                                    <label for="email_Marandi">Email Address *</label>
                                     <input type="email" id="email_Marandi" name="email_Marandi" required placeholder="rakesh@inmail.com" autocomplete="off">
                                 </div>
                                 <div class="form-group">
-                                    <label for="phoneMarandi">Phone Number</label>
-                                    <input type="tel" id="phone_Marandi" name="phone_Marandi" placeholder="+91 12345 67890" autocomplete="off">
+                                    <label for="phone_Marandi">Phone Number</label>
+                                    <input type="tel" id="phone_Marandi" name="phone_Marandi" placeholder="+91 12345 67890" autocomplete="tel" inputmode="tel">
                                 </div>
                                 <div class="form-group">
-                                    <label for="subjectMarandi">Subject *</label>
+                                    <label for="subject_Marandi">Subject *</label>
                                     <input type="text" id="subject_Marandi" name="subject_Marandi" required placeholder="Project Inquiry" autocomplete="off">
                                 </div>
                                 <div class="form-group full-width">
-                                    <label for="messageMarandi">Your Message *</label>
+                                    <label for="message_Marandi">Your Message *</label>
                                     <textarea id="message_Marandi" name="message_Marandi" rows="6" required placeholder="Tell us about your project..." autocomplete="off"></textarea>
                                 </div>
                             </div>
@@ -216,8 +227,8 @@
                             <p>SP Colony<br>Dibdih<br>Ranchi, Jharkhand - 834002</p>
                         </div>
                         <div class="location-details">
-                            <p><strong>Parking:</strong> parking available</p>
-                            <p><strong>Public Transit:</strong> 5km/ 20min from Ranchi Station || <br> 6km/ 20min from Ranchi Airport.</p>
+                            <p><strong>Parking:</strong> Parking available nearby</p>
+                            <p><strong>Public Transit:</strong> Approx. 5 km (20 min) from Ranchi Railway Station and 6 km (20 min) from Ranchi Airport.</p>
                             <p><strong>Note:</strong> Please schedule an appointment in advance.</p>
                         </div>
                     </div>
@@ -245,39 +256,42 @@
             </div>
             <div class="faq-list">
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h4>How long does it take to get a project quote?</h4>
                         <span class="faq-toggle">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p>We typically provide project quotes within 1-2 business days after our initial consultation. For complex projects, we may need 3-5 days to provide a detailed proposal.</p>
                     </div>
                 </div>
+
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>Do you work with clients outside of New York?</h4>
+                    <button type="button" class="faq-question" aria-expanded="false">
+                        <h4>Do you work with clients outside Jharkhand?</h4>
                         <span class="faq-toggle">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
-                        <p>Absolutely! We work with clients worldwide. Most of our communication happens via video calls, email, and project management tools. We've successfully completed projects for clients across the US and internationally.</p>
+                        <p>Absolutely. We work with clients across India and internationally. Most communication happens via video calls, email, and shared project tools.</p>
                     </div>
                 </div>
+
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h4>What information should I include in my project inquiry?</h4>
                         <span class="faq-toggle">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p>Please include details about your project goals, target audience, timeline, budget range, and any specific features or requirements. The more information you provide, the better we can tailor our proposal to your needs.</p>
                     </div>
                 </div>
+
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question" aria-expanded="false">
                         <h4>Do you offer emergency support?</h4>
                         <span class="faq-toggle">+</span>
-                    </div>
+                    </button>
                     <div class="faq-answer">
-                        <p>Yes, we offer 24/7 emergency support for our maintenance clients. For urgent issues outside business hours, please call our emergency line or email us with \"URGENT\" in the subject line.</p>
+                        <p>Yes. Priority support is available for active maintenance clients. For urgent issues, call us directly or email with "URGENT" in the subject line.</p>
                     </div>
                 </div>
             </div>
@@ -291,7 +305,7 @@
                 <h2>Ready to Get Started?</h2>
                 <p>Let's schedule a free consultation to discuss your project and see how we can help.</p>
                 <div class="cta-buttons">
-                    <a href="#contactForm" class="btn btn-primary">Schedule Consultation</a>
+                    <a href="#contactForm-Hero" class="btn btn-primary">Schedule Consultation</a>
                     <a href="portfolio.html" class="btn btn-secondary">View Our Work</a>
                 </div>
             </div>
@@ -313,14 +327,23 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        
+                        <!-- 
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="t&c.html">Terms & Conditions</a></li>
+                        <li><a href="p&p.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li> 
+                        -->
+                        <li><a href="p&p.html">Privacy Policy</a></li>
+                        <li><a href="contactUs.pdf" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                        <li><a href="t&c.pdf" target="_blank" rel="noopener noreferrer">Terms & Conditions</a></li>
+                        <li><a href="refund.pdf" target="_blank" rel="noopener noreferrer">Cancellation & Refund Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/marandi.insta/" target="_blank" class="social-link">Instagram</a>
-                        <a href="mailto:hi@marandi.in" target="_blank" class="social-link">Email</a>
+                        <a href="https://www.instagram.com/marandi.insta/" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+                        <a href="mailto:hi@marandi.in" class="social-link">Email</a>
                     </div>
                 </div>
             </div>
