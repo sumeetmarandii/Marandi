@@ -1,8 +1,5 @@
 https://www.marandi.in/index.html
 https://www.marandi.in/about.html
-https://www.marandi.in/services.html
-https://www.marandi.in/portfolio.html
 https://www.marandi.in/contact.html
 https://www.marandi.in/p&p.html
 https://www.marandi.in/t&c.html
-https://www.marandi.in/refund.html

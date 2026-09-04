@@ -34,17 +34,58 @@ img { max-width: 100%; display: block; }
     background: rgba(244,237,220,.96);
     border-bottom: 2px solid var(--ink);
 }
-.nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-.brand { font: 700 1.25rem var(--display); text-decoration: none; letter-spacing: -.08em; }
-.brand::before { content: "["; color: var(--red); }
-.brand::after { content: "]"; color: var(--red); }
-.nav-toggle { display: none; border: 2px solid var(--ink); background: var(--yellow); font: 700 1rem var(--display); padding: .45rem .65rem; }
-.nav-links { display: flex; gap: .25rem; flex-wrap: wrap; justify-content: flex-end; }
-.nav-links a, .footer-links a { text-decoration: none; font: 700 .78rem var(--display); text-transform: uppercase; letter-spacing: .05em; padding: .5rem .65rem; }
-.nav-links a:hover, .nav-links a[aria-current="page"], .footer-links a:hover { background: var(--red); color: var(--paper); }
+.nav { 
+    min-height: 76px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 2rem; 
+}
+.brand { 
+    font: 700 1.25rem var(--display); 
+    text-decoration: none; 
+    letter-spacing: -.08em; 
+}
+.brand::before { 
+    content: "["; 
+    color: var(--red); 
+}
+.brand::after { 
+    content: "]"; 
+    color: var(--red); 
+}
+.nav-toggle { 
+    display: none; 
+    border: 2px solid var(--ink); 
+    background: var(--yellow); 
+    font: 700 1rem var(--display); 
+    padding: .45rem .65rem; }
+.nav-links { 
+    display: flex; 
+    gap: .25rem; 
+    flex-wrap: wrap; 
+    justify-content: flex-end; 
+}
+.nav-links a, .footer-links a { 
+    text-decoration: none; 
+    font: 700 .78rem var(--display); 
+    text-transform: uppercase; 
+    letter-spacing: .05em; 
+    padding: .5rem .65rem; 
+}
+.nav-links a:hover, .nav-links a[aria-current="page"], .footer-links a:hover { 
+    background: var(--red); 
+    color: var(--paper); 
+}
 
-main { overflow: hidden; }
-.hero, .page-hero { border-bottom: 2px solid var(--ink); background: var(--blue); color: var(--paper); }
+main { 
+    overflow: hidden; 
+}
+.hero, .page-hero { 
+    border-bottom: 2px solid var(--ink); 
+    background: var(--blue); 
+    color: var(--paper); 
+}
 .hero { min-height: 620px; display: grid; align-items: center; position: relative; }
 .hero::after { content: "MARANDI / INTERNET / EST. 2020"; position: absolute; right: 4vw; bottom: 2rem; color: rgba(244,237,220,.58); font: 700 clamp(.65rem, 1.6vw, 1rem) var(--display); transform: rotate(-90deg) translateX(100%); transform-origin: right bottom; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr); gap: 4rem; align-items: center; }
@@ -55,7 +96,7 @@ main { overflow: hidden; }
 .actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
 .button { display: inline-block; border: 2px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); padding: .75rem 1rem; background: var(--yellow); text-decoration: none; font: 700 .8rem var(--display); text-transform: uppercase; }
 .button:hover { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--ink); }
-.button.alt { background: var(--paper); }
+.button.alt { background: var(--paper); color: var(--ink); }
 .sticker { background: var(--yellow); color: var(--ink); border: 2px solid var(--ink); padding: 1.4rem; box-shadow: var(--shadow); transform: rotate(3deg); }
 .hero-mark { width: 112px; height: 112px; object-fit: contain; margin: 0 auto 1.2rem; mix-blend-mode: multiply; }
 .sticker strong { display: block; font: 700 2.2rem/.95 var(--display); text-transform: uppercase; }
