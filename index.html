@@ -1,328 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Transform your business online with expert website design, development, and internet business onboarding. We help entrepreneurs launch and scale their digital presence.">
-    <meta name="keywords" content="website design, web development, digital onboarding, internet business, online presence, web solutions">
-    <meta property="og:title" content="Your Partner in Digital Transformation">
-    <meta property="og:description" content="Get your business online with professional website design and development. Let's build your digital success story together.">
-    
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://marandi.in/index.html">
-    <meta property="og:image" content="https://asset.marandi.in/owl.png">
-    <meta property="og:image:alt" content="Marandi In. Logo">
-    <meta property="og:image:type" content="image/png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Web Design & Development for Your Business">
-    <meta name="twitter:description" content="Ready to go digital? Let's build your online presence with modern web design and seamless development. Your success story starts here!">
-    <meta name="twitter:image" content="https://asset.marandi.in/owl.png">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    
-    <title>Marandi In. - Your Internet Business Growth Partner</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Marandi Internet builds distinctive websites and digital foundations for ambitious businesses.">
+    <title>Marandi Internet | Digital, with character.</title>
+    <link rel="icon" href="favicon/favicon.ico">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-    <meta name="google-site-verification" content="6cZbTcl8NohSBICBi7hnCWyXjnEsm5C1DcpHVgyfjVs" />
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VC9LSSRJZL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-VC9LSSRJZL');
-    </script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">Marandi In.</span>
-            </div>
-            <div class="nav-menu" id="navMenu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="portfolio.html" class="nav-link">Portfolio</a>
-                <!-- <a href="contact.html" class="nav-link">Contact</a> -->
-                <a href="contactUs.pdf" target="_blank" class="nav-link">Contact &#x21d7;</a>
-            </div>
-            <div class="nav-toggle" id="navToggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container nav">
+    <a class="brand" href="index.html">Marandi</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="t%26c.html">Terms</a><a href="p%26p.html">Privacy</a>
     </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="gradient-text">Ready to Go</span><br>
-                    <span class="hero-subtitle">Digital? Let's Build!</span>
-                </h1>
-                <p class="hero-description">
-                    Your business deserves a killer website. We create stunning, high-converting digital experiences 
-                    that help entrepreneurs thrive on the internet. From zero to online in no time! 🚀
-                </p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="document.location='#contact'">Start Your Journey</button>
-                    <button class="btn btn-secondary" onclick="document.location='#services'">See What We Offer</button>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-shapes">
-                    <div class="shape shape-1"></div>
-                    <div class="shape shape-2"></div>
-                    <div class="shape shape-3"></div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Why Choose Us?</h2>
-                <p class="section-subtitle">We're obsessed with helping businesses like yours succeed online</p>
-            </div>
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="card-icon">🎨</div>
-                    <h3>Beautiful & Functional</h3>
-                    <p>Websites that don't just look great—they convert visitors into customers. Design meets strategy.</p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">⚡</div>
-                    <h3>Fast & Reliable</h3>
-                    <p>Lightning-quick load times, smooth performance, and rock-solid hosting. Your site won't let you down.</p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">🤝</div>
-                    <h3>Real Partnership</h3>
-                    <p>We don't just build websites—we become your digital growth partner. Your success is our success.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">What We Do</h2>
-                <p class="section-subtitle">Everything you need to establish and grow your internet business</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-number">01</div>
-                    <h3>Website Design</h3>
-                    <p>Custom-built, mobile-responsive websites that showcase your brand and drive conversions. Modern design meet your business goals.</p>
-                    <div class="service-tech">
-                        <span class="tech-tag">Responsive</span>
-                        <span class="tech-tag">Modern UI</span>
-                        <span class="tech-tag">SEO Ready</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-number">02</div>
-                    <h3>E-Commerce Setup</h3>
-                    <p>Turn your product idea into a thriving online store. From design to payment integration, we handle it all.</p>
-                    <div class="service-tech">
-                        <span class="tech-tag">Payment Gateway</span>
-                        <span class="tech-tag">Inventory</span>
-                        <span class="tech-tag">Analytics</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-number">03</div>
-                    <h3>Business Onboarding</h3>
-                    <p>Complete guidance to get your business online. Domain, hosting, email setup, and all technical stuff sorted. You focus on business!</p>
-                    <div class="service-tech">
-                        <span class="tech-tag">Domain Setup</span>
-                        <span class="tech-tag">Hosting</span>
-                        <span class="tech-tag">Email Config</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Success Stories</h2>
-                <p class="section-subtitle">See how we've helped businesses like yours go digital and thrive</p>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="images/e-com.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div class="portfolio-overlay">
-                            <button class="view-btn">View Project</button>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Online Store Launch</h4>
-                        <p>Helped a startup go from idea to $10K monthly revenue with their first e-commerce site</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="images/agency.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div class="portfolio-overlay">
-                            <button class="view-btn">View Project</button>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Service Business Website</h4>
-                        <p>Complete brand identity and online presence for a service-based entrepreneur</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="images/responsive.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div class="portfolio-overlay">
-                            <button class="view-btn">View Project</button>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Mobile-First Platform</h4>
-                        <p>Beautiful, lightning-fast website built for mobile users and search rankings</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Let's Build Your Digital Future</h2>
-                <p class="section-subtitle">Have questions? Want to discuss your business? Let's chat! 💬</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>hi@marandi.in</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+91 89879 58804</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <h4>Location</h4>
-                            <p>C/O- BIKRAM MURMU, DEBDIH, <br>
-                                NEAR OVER BRIDGE, DIBDIH, RANCHI, <br>
-                                JHARKHAND - 834002, INDIA
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm-Hero" action="contact.php" method="POST">
-                    <div class="form-group">
-                        <input type="text" id="full_Name_Marandi" name="full_Name_Marandi" placeholder="Your Name" required autocomplete="off">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email_Marandi" name="email_Marandi" placeholder="Your Email" required autocomplete="off">
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone_Marandi" name="phone_Marandi" placeholder="Your Phone" required autocomplete="off">
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message_Marandi" name="message_Marandi" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Marandi In.</h3>
-                    <p>We help entrepreneurs and businesses launch and grow their online presence. Your digital success is our mission.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="p&p.html">Privacy Policy</a></li>
-                        <li><a href="contactUs.pdf" target="_blank">Contact</a></li>
-                        <li><a href="t&c.pdf" target="_blank">Terms & Conditions</a></li>
-                        <li><a href="refund.pdf" target="_blank">Cancellation & Refund Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/marandi.insta/" target="_blank" class="social-link">Instagram</a>
-                        <a href="mailto:mail@marandi.in" target="_blank" class="social-link">Email</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> Marandi In. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const yearSpan = document.getElementById("currentYear");
-            const currentYear = new Date().getFullYear();
-            yearSpan.textContent = currentYear;
-
-            if (window.VANTA && window.THREE && document.getElementById("home")) {
-                window.VANTA.GLOBE({
-                    el: "#home",
-                    mouseControls: true,
-                    touchControls: true,
-                    gyroControls: false,
-                    minHeight: 700.0,
-                    minWidth: 320.0,
-                    scale: 1.0,
-                    scaleMobile: 1.0,
-                    size: 1.0,
-                    backgroundColor: 0x0
-                });
-            }
-        });
-    </script>
+</div></header>
+<main id="main">
+    <section class="hero"><div class="container hero-grid">
+        <div class="reveal"><p class="kicker">Independent digital studio / Ranchi, India</p><h1>Digital,<br><span>with character.</span></h1><p class="hero-copy">Marandi Internet gives ambitious businesses a sharp, memorable presence online. Thoughtful design, dependable code, and no beige templates.</p><div class="actions"><a class="button" href="contact.html">Start a conversation</a><a class="button alt" href="#work">See the approach</a></div></div>
+        <aside class="sticker reveal"><img class="hero-mark" src="images/owl.png" alt="Marandi owl mark"><strong>Good ideas deserve a good home.</strong><p>Websites, stores, and digital systems made to be useful, fast, and unmistakably yours.</p></aside>
+    </div></section>
+    <section class="section" id="work"><div class="container"><div class="section-heading"><div><p class="eyebrow">The short version</p><h2>Small studio.<br>Big signal.</h2></div><p>We help people turn a business idea into a clear online experience that customers can actually use.</p></div><div class="grid">
+        <article class="panel"><span class="number">01</span><h3>Make it clear</h3><p>Positioning, structure, and words that help visitors understand what you do in seconds.</p></article>
+        <article class="panel"><span class="number">02</span><h3>Make it work</h3><p>Responsive interfaces and practical technical foundations that behave well everywhere.</p></article>
+        <article class="panel"><span class="number">03</span><h3>Make it yours</h3><p>A visual identity with enough character to be remembered and enough restraint to last.</p></article>
+    </div></div></section>
+    <section class="section tint"><div class="container about-layout"><div><p class="eyebrow">Our point of view</p><h2>Useful beats flashy. Every time.</h2><p>There is a particular joy in a site that feels effortless: the right message, the right button, the right detail in the right place. That is the work we like doing.</p><p>Marandi is a small, collaborative team for founders and growing businesses who want a digital home with a point of view.</p><a class="button" href="about.html">Meet the studio</a></div><div class="stat-board"><div class="stat"><strong>01</strong><span>clear direction</span></div><div class="stat"><strong>100%</strong><span>static-host friendly</span></div><div class="stat"><strong>24/7</strong><span>your site can stay online</span></div><div class="stat"><strong>0</strong><span>contact forms to fight</span></div></div></div></section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="index.html">Marandi</a><p>Digital work with a little more personality.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="t%26c.html">Terms</a><a href="p%26p.html">Privacy</a></nav></div><div class="footer-bottom"><span>Marandi Internet</span><span>&copy; <span data-year></span> / Built for the open web</span></div></div></footer>
+<script src="script.js"></script>
 </body>
 </html>
