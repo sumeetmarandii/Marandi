@@ -86,11 +86,41 @@ main {
     background: var(--blue); 
     color: var(--paper); 
 }
-.hero { min-height: 620px; display: grid; align-items: center; position: relative; }
-.hero::after { content: "MARANDI / INTERNET / EST. 2020"; position: absolute; right: 4vw; bottom: 2rem; color: rgba(244,237,220,.58); font: 700 clamp(.65rem, 1.6vw, 1rem) var(--display); transform: rotate(-90deg) translateX(100%); transform-origin: right bottom; }
-.hero-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr); gap: 4rem; align-items: center; }
-.kicker { color: var(--yellow); font: 700 .8rem var(--display); letter-spacing: .16em; text-transform: uppercase; }
-.hero h1, .page-hero h1 { margin: .8rem 0 1.5rem; max-width: 800px; font: 700 clamp(3.5rem, 9vw, 8rem)/.88 var(--display); letter-spacing: -.12em; text-transform: uppercase; }
+.hero { 
+    min-height: 620px; 
+    display: grid; 
+    align-items: center; 
+    position: relative; 
+}
+.hero::after { 
+    content: "MARANDI / INTERNET / EST. 2020"; 
+    position: absolute; 
+    right: 4vw; 
+    bottom: 2rem; 
+    color: rgba(244,237,220,.58); 
+    font: 700 clamp(.65rem, 1.6vw, 1rem) var(--display); 
+    transform: rotate(-90deg) translateX(100%); 
+    transform-origin: right bottom; 
+}
+.hero-grid { 
+    display: grid; 
+    grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr); 
+    gap: 4rem; 
+    align-items: center; 
+}
+.kicker { 
+    color: var(--yellow); 
+    font: 700 .8rem var(--display); 
+    letter-spacing: .16em; 
+    text-transform: uppercase; 
+}
+.hero h1, .page-hero h1 { 
+    margin: .8rem 0 1.5rem; 
+    max-width: 800px; 
+    font: 700 clamp(3.5rem, 9vw, 8rem)/.88 var(--display); 
+    letter-spacing: -.12em; 
+    text-transform: uppercase; 
+}
 .hero h1 span { color: var(--yellow); }
 .hero-copy { max-width: 580px; font-size: 1.15rem; }
 .actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
